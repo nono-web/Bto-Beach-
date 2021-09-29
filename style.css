@@ -1,139 +1,173 @@
 * {
   box-sizing: border-box;
-}
-body {
- margin:0;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
- width: 100%;
- height: 100%;
-}
-/* navigation */
-nav {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 0;
- background-color:#20407d;
-}
-.btob {
-  width: 15%;
-}
-h1 {
-  display: flex;
-  align-items: center;
-  color: goldenrod;
-  font-family: Impact,'Arial Narrow Bold';
-  font-size: 1.5rem;
+  padding: 0;
   margin: 0;
 }
-ul.menu {
- padding: 0;
- list-style: none;
- margin-right: 1.5rem;
+
+html {
+  font-size: 0.625rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*-------- Navigation --------*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#071d4c;
+  font-size: 1rem;
+  border-bottom: solid 0.3rem;
+  border-color: #b98800;
+ }
+
+.btob {
+  width: 8rem;
+}
+
+ul.menu {
+ list-style: none;
+ margin-right: 2rem;
+}
+
 li a {
  display: inline-block;
- padding: 0.3rem;
+ padding: 0.2rem;
  text-decoration: none;
- color: goldenrod;
+ color: #b98800;
 }
+
 li a:hover {
   color: white;
 }
 
-/* header */
+/*-------- Header --------*/
 
-h2 {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  color: goldenrod;
-}
-@media screen and (min-width: 600px) {
- ul.menu>li {
-     display: inline-block;
- }
- h2 { 
-  margin-top: 3rem;
-  margin-left: 5rem;
-  margin-bottom: 3rem;
+.concept {
   font-size: 1.5rem;
-  color: goldenrod;
-}
+  margin: 2rem auto 2rem 6rem;
+  color: #b98800;
 }
 
-/* slide testing */
+@media screen and (min-width: 600px) {
+  ul.menu>li {
+     display: inline-block;
+     font-size: 2rem;
+     margin-right: 3rem;
+  }
+  .concept { 
+    margin: 5rem auto 5rem 8rem;
+    font-size: 2.5rem;
+  }
+}
 
-div#slider { width: 100%; max-width: 900px; overflow: hidden; margin: auto; }
-div#slider figure {
+/*-------- Slide  --------*/
+
+div#slide { 
+  width: 90%; 
+  max-width: 900px; 
+  overflow: hidden; 
+  margin: auto; 
+  border: 2px solid
+}
+
+div#slide figure {
   position: relative; 
   width: 500%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: left;
-  animation: 20s slidy infinite;
-}
-div#slider figure img { width: 20%; height: auto; float: left; }
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: 0%; }
-  25% { left: 0%; }
-  45% { left: 0%; }
-  50% { left: -100%; }
-  70% { left: -100%; }
-  75% { left: -200%; }
-  95% { left: -200%; }
-  100% { left: -200%; }
+  animation: 25s slidy infinite;
 }
 
-/* bulle */
+div#slide figure img { 
+  width: 20%; 
+  float: left; 
+}
+
+@keyframes slidy {
+  0% { right: 0%; }
+  10% { right: 0%; }
+  20% { right: 100%; }
+  30% { right: 100%; }
+  40% { right: 200%; }
+  50% { right: 200%; }
+  70% { right: 300%; }
+  80% { right: 300%; }
+  90% { right: 400%; }
+  100% { right: 400%; }
+}
+
+/*-------- Section bulle et avis --------*/
+
+.recommend {
+  font-size: 1.5rem;
+  margin: 2rem auto 1rem 6rem;
+  color: #b98800;
+}
 
 .bulle {
-  width: 8%;
-  height: 8%;
-  margin-top: 1rem;
-  margin-left: 2rem;
+  width: 10%;
+  height: 10%;
+  margin: 1rem;
 }
-@media screen and (min-width: 600px) {
-  .bulle { 
-  margin-top: 2rem;
-  margin-left: 5rem;
-}
-.avis {
-  max-width: 70%;
-}
-}
+
 .avis {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 p {
-  margin-left: 5rem;
+  margin-left: 1rem;
 }
 
-/* footer */
+.button {
+  margin: 1rem auto auto 45%;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .recommend {
+    margin: 5rem auto 5rem 8rem;
+    font-size: 2.5rem;
+  }  
+  .bulle { 
+    margin-top: 2rem;
+    margin-left: 10rem;
+    width: 7%;
+  }
+  p {
+    margin-left: 10rem;
+    font-size: 1.7rem;
+  }
+  .button {
+    margin: 2rem auto auto 50%;
+    font-size: 1.7rem;
+  }
+}
+
+
+/*-------- footer --------*/
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: #20407d;
-  color: goldenrod;
-  margin-top: 3rem;
+  background-color: #071d4c;
+  color: #b98800;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-top: solid 0.3rem;
+  border-color: #b98800;
 }
-.end li {
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
-}
-  h3 {
-    margin-left: 2rem;
+
+.footer {
+    margin-left: 1rem;
   }
+
 @media screen and (min-width: 600px) {
-  .end li {
-    margin-right: 20rem;
+  .footer { 
+    font-size: 2rem;
+  }
+  footer {
+    margin-top: 5rem;
   }
 }
