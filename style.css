@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+
 /*-------- Navigation --------*/
 
 nav {
@@ -16,68 +17,72 @@ nav {
   border-color: #b98800;
  }
 
-.btob {
+.logo-btob {
   width: 5rem;
   margin-left: 1rem;
+
 }
 
-ul.menu {
+.nav-menu {
  list-style: none;
  margin-right: 0.5rem;
 }
 
-li a {
+.nav-item a {
  display: inline-block;
  padding: 0.2rem;
  text-decoration: none;
  color: #b98800;
 }
 
-li a:hover {
+.nav-item a:hover {
   color: white;
 }
 
 /*-------- Header --------*/
 
-.concept {
+
+.entry-title {
   font-size: 0.8rem;
   margin: 2rem auto 2rem 2rem;
   color: #b98800;
 }
 
 @media screen and (min-width: 600px) {
-  ul.menu>li {
+  .nav-menu>.nav-item {
      display: inline-block;
      font-size: 1.7rem;
      margin-right: 1.5rem;
   }
-  .concept { 
+
+  .entry-title{  
     margin: 4rem auto 4rem 6rem;
     font-size: 2rem;
   }
-  .btob {
+ .logo-btob {
     width: 8rem;
     margin-left: 2rem;
+
   }
 }
 
 /*-------- Slide  --------*/
 
-div#slide { 
+#slide { 
   width: 90%; 
   max-width: 900px; 
   overflow: hidden; 
   margin: auto; 
-  border: 2px solid
+  border: 2px solid;
 }
 
-div#slide figure {
+#slide figure {
   position: relative; 
   width: 500%;
   animation: 25s slidy infinite;
 }
 
-div#slide figure img { 
+#slide figure .img-slide { 
   width: 20%; 
   float: left; 
 }
@@ -97,7 +102,8 @@ div#slide figure img {
 
 /*-------- Section bulle et avis --------*/
 
-.recommend {
+
+.title-recommend {
   font-size: 0.8rem;
   margin: 2rem auto 2rem 2rem;
   color: #b98800;
@@ -109,7 +115,7 @@ div#slide figure img {
   margin: 0.8rem;
 }
 
-.avis {
+.global-feedbacks {
   display: flex;
   align-items: center;
   width: 95%;
@@ -120,13 +126,14 @@ p {
   font-size: 0.6rem;
 }
 
-.button {
+
+.button-feedback {
   margin: 1rem auto auto 44%;
   font-size: 0.70rem;
 }
 
 @media screen and (min-width: 600px) {
-  .recommend {
+  .title-recommend {
     margin: 4rem auto 4rem 6rem;
     font-size: 1.7rem;
   }  
@@ -139,7 +146,7 @@ p {
     font-size: 1.2rem;
     padding: 0.6rem;;
   }
-  .button {
+  .button-feedback {
     margin: 2rem auto auto 50%;
     font-size: 1.2rem;
   }
@@ -148,7 +155,7 @@ p {
 
 /*-------- footer --------*/
 
-footer {
+.footer-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -156,23 +163,26 @@ footer {
   color: #b98800;
   margin-top: 3rem;
   padding: 0.65rem;
-  border-top: solid 0.3rem;
+    border-top: solid 0.3rem;
   border-color: #b98800;
 }
 
-.btob1 {
+
+
+
+.footer-container>.logo-btob  {
   width: 3rem;
 }
-
-@media screen and (min-width: 600px) {
-  .footer { 
-    font-size: 2rem;
+ .footer-container>.logo-btob {
+   height: 5rem ;
+   width: auto;
   }
-  footer {
+
+ .footer-container> {
     margin-top: 5rem;
     padding: 0.90rem;
   }
-  .btob1 {
+  .footer-container>.logo-btob {
     width: 7rem;
   }
-}
+
