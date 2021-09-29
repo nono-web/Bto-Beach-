@@ -21,41 +21,43 @@ nav {
   border-color: #b98800;
  }
 
-.btob {
+.logo-btob {
   width: 8rem;
+  margin-left: 0.5rem;
+  
 }
 
-ul.menu {
+.nav-menu {
  list-style: none;
  margin-right: 2rem;
 }
 
-li a {
+.nav-item a {
  display: inline-block;
  padding: 0.2rem;
  text-decoration: none;
  color: #b98800;
 }
 
-li a:hover {
+.nav-item a:hover {
   color: white;
 }
 
 /*-------- Header --------*/
 
-.concept {
+.entry-title {
   font-size: 1.5rem;
   margin: 2rem auto 2rem 6rem;
   color: #b98800;
 }
 
 @media screen and (min-width: 600px) {
-  ul.menu>li {
+  .nav-menu>.nav-item {
      display: inline-block;
      font-size: 2rem;
      margin-right: 3rem;
   }
-  .concept { 
+  .entry-title{ 
     margin: 5rem auto 5rem 8rem;
     font-size: 2.5rem;
   }
@@ -63,21 +65,21 @@ li a:hover {
 
 /*-------- Slide  --------*/
 
-div#slide { 
+#slide { 
   width: 90%; 
   max-width: 900px; 
   overflow: hidden; 
   margin: auto; 
-  border: 2px solid
+  border: 2px solid;
 }
 
-div#slide figure {
+#slide figure {
   position: relative; 
   width: 500%;
   animation: 25s slidy infinite;
 }
 
-div#slide figure img { 
+#slide figure .img-slide { 
   width: 20%; 
   float: left; 
 }
@@ -97,7 +99,7 @@ div#slide figure img {
 
 /*-------- Section bulle et avis --------*/
 
-.recommend {
+.title-recommend {
   font-size: 1.5rem;
   margin: 2rem auto 1rem 6rem;
   color: #b98800;
@@ -109,7 +111,7 @@ div#slide figure img {
   margin: 1rem;
 }
 
-.avis {
+.global-feedbacks {
   display: flex;
   align-items: center;
   width: 100%;
@@ -119,13 +121,13 @@ p {
   margin-left: 1rem;
 }
 
-.button {
+.button-feedback {
   margin: 1rem auto auto 45%;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 600px) {
-  .recommend {
+  .title-recommend {
     margin: 5rem auto 5rem 8rem;
     font-size: 2.5rem;
   }  
@@ -138,7 +140,7 @@ p {
     margin-left: 10rem;
     font-size: 1.7rem;
   }
-  .button {
+  .button-feedback {
     margin: 2rem auto auto 50%;
     font-size: 1.7rem;
   }
@@ -147,27 +149,24 @@ p {
 
 /*-------- footer --------*/
 
-footer {
+.footer-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #071d4c;
   color: #b98800;
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding: 1.5rem;
   border-top: solid 0.3rem;
   border-color: #b98800;
 }
 
-.footer {
-    margin-left: 1rem;
+.footer-container .title-footer {
+    margin-right: 5rem;
   }
 
-@media screen and (min-width: 600px) {
-  .footer { 
-    font-size: 2rem;
+ .footer-container>.logo-btob {
+   height: 5rem ;
+   width: auto;
   }
-  footer {
-    margin-top: 5rem;
-  }
-}
+
