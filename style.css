@@ -4,11 +4,6 @@
   margin: 0;
 }
 
-html {
-  font-size: 0.625rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /*-------- Navigation --------*/
 
 nav {
@@ -16,18 +11,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color:#071d4c;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-bottom: solid 0.3rem;
   border-color: #b98800;
  }
 
 .btob {
-  width: 8rem;
+  width: 5rem;
+  margin-left: 1rem;
 }
 
 ul.menu {
  list-style: none;
- margin-right: 2rem;
+ margin-right: 0.5rem;
 }
 
 li a {
@@ -44,20 +40,24 @@ li a:hover {
 /*-------- Header --------*/
 
 .concept {
-  font-size: 1.5rem;
-  margin: 2rem auto 2rem 6rem;
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
   color: #b98800;
 }
 
 @media screen and (min-width: 600px) {
   ul.menu>li {
      display: inline-block;
-     font-size: 2rem;
-     margin-right: 3rem;
+     font-size: 1.7rem;
+     margin-right: 1.5rem;
   }
   .concept { 
-    margin: 5rem auto 5rem 8rem;
-    font-size: 2.5rem;
+    margin: 4rem auto 4rem 6rem;
+    font-size: 2rem;
+  }
+  .btob {
+    width: 8rem;
+    margin-left: 2rem;
   }
 }
 
@@ -98,49 +98,50 @@ div#slide figure img {
 /*-------- Section bulle et avis --------*/
 
 .recommend {
-  font-size: 1.5rem;
-  margin: 2rem auto 1rem 6rem;
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
   color: #b98800;
 }
 
 .bulle {
   width: 10%;
   height: 10%;
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .avis {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 p {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .button {
-  margin: 1rem auto auto 45%;
-  font-size: 1rem;
+  margin: 1rem auto auto 44%;
+  font-size: 0.70rem;
 }
 
 @media screen and (min-width: 600px) {
   .recommend {
-    margin: 5rem auto 5rem 8rem;
-    font-size: 2.5rem;
+    margin: 4rem auto 4rem 6rem;
+    font-size: 1.7rem;
   }  
   .bulle { 
     margin-top: 2rem;
-    margin-left: 10rem;
-    width: 7%;
+    margin-left: 8rem;
+    width: 7rem;
   }
   p {
-    margin-left: 10rem;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;;
   }
   .button {
     margin: 2rem auto auto 50%;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -149,19 +150,19 @@ p {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #071d4c;
   color: #b98800;
-  margin-top: 2rem;
-  padding: 1.5rem;
+  margin-top: 3rem;
+  padding: 0.65rem;
   border-top: solid 0.3rem;
   border-color: #b98800;
 }
 
-.footer {
-    margin-left: 1rem;
-  }
+.btob1 {
+  width: 3rem;
+}
 
 @media screen and (min-width: 600px) {
   .footer { 
@@ -169,5 +170,9 @@ footer {
   }
   footer {
     margin-top: 5rem;
+    padding: 0.90rem;
+  }
+  .btob1 {
+    width: 7rem;
   }
 }
