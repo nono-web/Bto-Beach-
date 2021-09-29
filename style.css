@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-body {
-  font-size: 0.625rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 /*-------- Navigation --------*/
 
@@ -16,20 +12,20 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color:#071d4c;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border-bottom: solid 0.3rem;
   border-color: #b98800;
  }
 
 .logo-btob {
-  width: 8rem;
-  margin-left: 0.5rem;
-  
+  width: 5rem;
+  margin-left: 1rem;
+
 }
 
 .nav-menu {
  list-style: none;
- margin-right: 2rem;
+ margin-right: 0.5rem;
 }
 
 .nav-item a {
@@ -45,21 +41,28 @@ nav {
 
 /*-------- Header --------*/
 
+
 .entry-title {
-  font-size: 1.5rem;
-  margin: 2rem auto 2rem 6rem;
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
   color: #b98800;
 }
 
 @media screen and (min-width: 600px) {
   .nav-menu>.nav-item {
      display: inline-block;
-     font-size: 2rem;
-     margin-right: 3rem;
+     font-size: 1.7rem;
+     margin-right: 1.5rem;
   }
-  .entry-title{ 
-    margin: 5rem auto 5rem 8rem;
-    font-size: 2.5rem;
+
+  .entry-title{  
+    margin: 4rem auto 4rem 6rem;
+    font-size: 2rem;
+  }
+ .logo-btob {
+    width: 8rem;
+    margin-left: 2rem;
+
   }
 }
 
@@ -99,50 +102,53 @@ nav {
 
 /*-------- Section bulle et avis --------*/
 
+
 .title-recommend {
-  font-size: 1.5rem;
-  margin: 2rem auto 1rem 6rem;
+  font-size: 0.8rem;
+  margin: 2rem auto 2rem 2rem;
   color: #b98800;
 }
 
 .bulle {
   width: 10%;
   height: 10%;
-  margin: 1rem;
+  margin: 0.8rem;
 }
 
 .global-feedbacks {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 p {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.6rem;
 }
 
+
 .button-feedback {
-  margin: 1rem auto auto 45%;
-  font-size: 1rem;
+  margin: 1rem auto auto 44%;
+  font-size: 0.70rem;
 }
 
 @media screen and (min-width: 600px) {
   .title-recommend {
-    margin: 5rem auto 5rem 8rem;
-    font-size: 2.5rem;
+    margin: 4rem auto 4rem 6rem;
+    font-size: 1.7rem;
   }  
   .bulle { 
     margin-top: 2rem;
-    margin-left: 10rem;
-    width: 7%;
+    margin-left: 8rem;
+    width: 7rem;
   }
   p {
-    margin-left: 10rem;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;;
   }
   .button-feedback {
     margin: 2rem auto auto 50%;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -151,22 +157,32 @@ p {
 
 .footer-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #071d4c;
   color: #b98800;
-  margin-top: 5rem;
-  padding: 1.5rem;
-  border-top: solid 0.3rem;
+  margin-top: 3rem;
+  padding: 0.65rem;
+    border-top: solid 0.3rem;
   border-color: #b98800;
 }
 
-.footer-container .title-footer {
-    margin-right: 5rem;
-  }
 
+
+
+.footer-container>.logo-btob  {
+  width: 3rem;
+}
  .footer-container>.logo-btob {
    height: 5rem ;
    width: auto;
+  }
+
+ .footer-container> {
+    margin-top: 5rem;
+    padding: 0.90rem;
+  }
+  .footer-container>.logo-btob {
+    width: 7rem;
   }
 
