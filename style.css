@@ -240,6 +240,6 @@ input[type="submit"]:hover {
 }
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 1rem;
+    font-size: 0,5rem;
   }
 }

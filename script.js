@@ -23,5 +23,6 @@ const periode = document.getElementById('periode').value;
             return "Invalid";
     }
 }
-
 console.log(Tarif());
+
+
