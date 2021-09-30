@@ -106,7 +106,6 @@ p{
 
 /*-------- Section bulle et avis --------*/
 
-
 .title-recommend {
   font-size: 0.8rem;
   margin: 2rem auto 2rem 2rem;
@@ -114,9 +113,10 @@ p{
 }
 
 .bulle {
-  width: 10%;
-  height: 10%;
+  width: 13%;
+  height: 13%;
   margin: 0.8rem;
+  border: solid 2px black;
 }
 
 .global-feedbacks {
@@ -125,14 +125,32 @@ p{
   width: 95%;
 }
 
+.hidden-global-feedbacks { 
+  display: none;
+  align-items: center; 
+  width: 95%;
+}
+
+.hidden-global-feedbacks p {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+
 .global-feedbacks p {
   margin-left: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;;
 }
 
 .button-feedback {
   margin: 1rem auto auto 44%;
-  font-size: 0.70rem;
+  font-size: 0.7rem;
+  background: white;
+  color: #b98800;
+  border: 2px solid #b98800;
+  border-radius: 1rem;
+  padding: 3px 4px;
 }
 
 @media screen and (min-width: 600px) {
@@ -142,15 +160,20 @@ p{
   }  
   .bulle { 
     margin-top: 2rem;
-    margin-left: 8rem;
-    width: 7rem;
+    margin-left: 6rem;
+    width: 13%;
   }
   .global-feedbacks p {
-    padding: 0.6rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+  }
+  .hidden-global-feedbacks p{
+    padding: 0.8rem;
+    font-size: 1.3rem;
   }
   .button-feedback {
     margin: 2rem auto auto 50%; 
-    font-size: 1rem;
+    font-size: 1rem;   
   }
 }
 
