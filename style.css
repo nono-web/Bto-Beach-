@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 }
 
 body {
@@ -211,9 +212,63 @@ p{
   .footer-container p {
     font-size: 1.7rem;  
   }
+
+
+}
+/*-------- page contact --------*/
+.h2-contact {
+color: #b98800;
+margin: 1.5rem;
 }
 
-/*--------------- Tour --------------*/
+.contact {
+  text-align: center;
+}
+
+label {
+  line-height: 2;
+}
+
+/* Effet de style sur le texte qui sera ecrit dans les cases */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+input[type="button"] {
+  background:#b98800 ;
+  color: white;
+  border: 3px solid black;
+  border-radius: 1rem;
+  padding: 5px 10px;
+}
+input[type="button"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
+}
+/* Effet de style sur le bouton */
+input[type="submit"] {
+  background:#b98800 ;
+  color: white;
+  border: 3px solid black;
+  border-radius: 1rem;
+  padding: 5px 10px;
+}
+/* Effet pour quand que l'utlisateur met la souris sur le bouton
+le bouton change de couleur et dans ce cas il devient rouge */
+input[type="submit"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
+}
+@media screen and (max-width: 900px) {
+  .h2-contact {
+    font-size: 0,5rem;
+  }
+}
+
+}
 
 .concepttour{
   text-align: center;
@@ -330,3 +385,4 @@ width: 100%;
   align-items: center;
 }
 }
+
