@@ -20,10 +20,73 @@
       <li class="nav-item"><a href="./about-us.html">About us</a></a></li>
     </ul>
   </nav>
+  <section class="contact">
+    <!--Section Contact-->
+    <h2 class="h2-contact">
+      Merci de remplir le formulaire ci-dessous selon votre demande
+    </h2>
+
+    <form class="contactform">
+      <label for="name"> Nom et Prenom : </label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Pierre Dupont"
+      />
+      <br/>
+      <!-- case pour ercire non et prenom-->
+      <label for="email"> Adresse mail : </label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="exemplemail@royale.com"
+      /><br />
+      
+
+    
+      <label for="periode">Periode : </label>
+      <select class="periode" id="periode">
+      <option selected>Selectionner votre Periode</option>
+      <option  value="Periode1">Janvier à Mars</option>
+       <option  value="Periode2">Avril à Juin</option>
+       <option value="Periode3">Juillet à Septembre</option>
+       <option  value="Periode4">Octobre à Décembre</option>
+      </select><br/>
+
+      <input class="buttonTarif"
+      type="button"
+      value="Tarif">
 
 
+      <div>
+        <label for="gender">Demande : </label>
+        <br/>
+        <input type="radio" name="type" class="check" checked />
+        <label class="check2" for="devis">Devis</label>
 
-<!--Code--->
+        <input type="radio" name="type" class="check" />
+        <label class="check2" for="dispo">Disponibilité</label>
+
+        <input type="radio" name="type" class="check" />
+        <label class="check2" for="renseignement">Renseignement</label>
+      </div>
+
+
+      <label for="message"> Message</label><br />
+      <textarea id="message" name="message"></textarea>
+      <br /><br />
+      <input id="buttonContact"
+        type="submit"
+        value="Envoyer"
+      /><!--Bouton soumettre le formulaire-->
+    </form>
+  </section>
+  <!--Referme "contact"-->
+  <!-- Connection au fichier java -->
+  <script src="script.js"></script>
+
 
 
   <footer class="footer-container">
