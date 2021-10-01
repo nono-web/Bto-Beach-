@@ -1,12 +1,15 @@
-* {
+html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
  
 }
 
+
 body {
   font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
 }
 
 /*-------- Navigation --------*/
@@ -71,17 +74,8 @@ p{
   font-family: sans-serif;
 }
 
-/*-------- Slide  --------*/
-
-#slide { 
-  width: 90%; 
-  max-width: 900px; 
-  overflow: hidden; 
-  margin: auto; 
-  border: 2px solid;
-}
-
 #slide figure {
+  margin: 0;  /*check*/
   position: relative; 
   width: 500%;
   animation: 25s slidy infinite;
@@ -212,6 +206,63 @@ p{
   .footer-container p {
     font-size: 1.7rem;  
   }
+
+}
+
+/*-------- about-us page--------*/
+
+.team-title {
+  font-size: 1.6rem;
+  color: #b98800;
+  padding-bottom: 1.7rem;
+  margin-left: 1.5rem;
+}
+
+.column-img {
+  display: flex;
+  justify-content: space-around; /*space around pour mobile*/  
+}
+
+.column-img-solo{
+
+  display: flex;
+  justify-content: center;
+}
+
+.img-team {
+  width: 8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .img-team {
+    width: 10rem; 
+  }
+}
+
+.team-history{
+  margin-top: 1.6rem;
+}
+
+.philo-title {
+  font-size: 1.6rem;
+  color: #b98800;
+}
+
+.team-history {
+  padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .team-history {
+  padding: 4.5rem 8em 8rem 6.5rem; 
+  }
+}
+@media screen and (min-width: 2000px) {
+  .team-history {
+  padding: 4.5rem 8em 9rem 6.5rem; 
+  }
+}
+
 
 
 }
@@ -385,4 +436,3 @@ width: 100%;
   align-items: center;
 }
 }
-
