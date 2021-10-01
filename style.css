@@ -74,6 +74,18 @@ p{
   font-family: sans-serif;
 }
 
+/*-------- Slide  --------*/
+
+#slide { 
+  width: 90%; 
+  max-width: 900px; 
+  overflow: hidden; 
+  margin: auto; 
+  border: 2px solid;
+}
+
+
+
 #slide figure {
   margin: 0;  /*check*/
   position: relative; 
@@ -263,9 +275,6 @@ p{
   }
 }
 
-
-
-}
 /*-------- page contact --------*/
 .h2-contact {
 color: #b98800;
@@ -319,7 +328,7 @@ input[type="submit"]:hover {
   }
 }
 
-}
+
 
 .concepttour{
   text-align: center;
