@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
  
 }
 
@@ -328,8 +329,7 @@ input[type="submit"]:hover {
   }
 }
 
-
-
+/*-------- Page Tour --------*/
 .concepttour{
   text-align: center;
   font-size: 4vw;
@@ -341,7 +341,7 @@ input[type="submit"]:hover {
   padding: 1.2rem;
   margin: auto;
   display: flex;
-margin-top: 2%;
+  margin-top: 2%;
 }
 
 
@@ -351,11 +351,12 @@ margin-top: 2%;
 }
 .img1tour{
   align-items: center;
- max-width: 100%;
+  max-width: 100%;
+  border-radius: 5%;
 }
 
 #imgx5toptour{
-margin: 5%;
+  margin: 5%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -363,6 +364,7 @@ margin: 5%;
 .img2t{
  margin: 5%;
  max-width: 90%;
+ border-radius: 10%
 }
 
 
@@ -372,6 +374,7 @@ margin: 5%;
 
 .kilometrage{
   margin-left: 2rem;
+  margin-top: 5rem;
 }
 
 @media screen and (max-width: 600px){
@@ -415,6 +418,7 @@ width: 100%;
 .textDetailTour{
   margin-right: 2rem;
   font : justify;
+  
 }
 
 @media screen and (min-width: 600px){
@@ -422,7 +426,17 @@ width: 100%;
 .VilleTour2{
     display: flex;
     flex-direction: row;
+    
 }
+
+.img2t {
+  box-shadow: 12px 29px 81px 0px rgba(3, 3, 3, 0.75); /*Ombre mis en place sur les img*/
+ }
+ 
+ .img2t:hover {
+   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+   box-shadow: 12px 29px 81px 50px white; /*Ombre mis en place sur les img*/
+ }
 
 .imgVilleTour {
   width: 20%;
@@ -443,5 +457,27 @@ width: 100%;
 .DetailTour{
   display: flex;
   align-items: center;
+  
+}
+scroll-container {
+  overflow-y: scroll; /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+  scroll-behavior: smooth; /*permet de scroll en douceur  */
 }
 }
+
+scroll-container {
+  overflow-y: scroll; /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+  scroll-behavior: smooth; /*permet de scroll en douceur  */
+}
+.img2t {
+ transition: transform .3s; /* Animation */
+}
+
+.img2t:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.VilleTour{
+  margin: 1.2rem 1.2rem;
+}
+
