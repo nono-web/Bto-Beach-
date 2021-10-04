@@ -1,50 +1,16 @@
-/***About-us***/
 
+/***arrow-up***/
 
-const portraitOne = document.querySelector('#portraitOne');
-const portraitTwo = document.querySelector('#portraitTwo');
-const portraitThree = document.querySelector('#portraitThree');
-const portraitFour = document.querySelector('#portraitFour');
-const portraitFive = document.querySelector('#portraitFive');
+const arrow = document.querySelector("#arrow-upping");
 
-let allPortraits =[portraitOne,portraitTwo,portraitThree,portraitFour,portraitFive]
+arrow.addEventListener('click', ()=>{
+  window.scroll({
+    top:0,
+    behavior: 'smooth'  
+  });
 
-
-portraitMoove = (portrait)=> {
-  portraitOne.addEventListener('mouseenter', () => {
-    portraitOne.src = "./assets/citys/Saint-Aubin.png";
-})
-portraitOne.addEventListener('mouseleave',() =>{
-  portraitOne.src = "./assets/img-team/portraitOne.png";
-})
-portraitTwo.addEventListener('mouseenter', () => {
-  portraitTwo.src = "./assets/citys/Saint-Aubin.png";
-})
-portraitTwo.addEventListener('mouseleave',() =>{
-portraitTwo.src = "./assets/img-team/PortraitFour.png";
-})
-portraitThree.addEventListener('mouseenter', () => {
-  portraitThree.src = "./assets/citys/Saint-Aubin.png";
-})
-portraitThree.addEventListener('mouseleave',() =>{
-portraitThree.src = "./assets/img-team/PortraitThree.png";
-})
-portraitFour.addEventListener('mouseenter', () => {
-  portraitFour.src = "./assets/citys/Saint-Aubin.png";
-})
-portraitFour.addEventListener('mouseleave',() =>{
-portraitFour.src = "./assets/img-team/PortraitSix.png";
-})
-portraitFive.addEventListener('mouseenter', () => {
-  portraitFive.src = "./assets/citys/Saint-Aubin.png";
-})
-portraitFive.addEventListener('mouseleave',() =>{
-portraitFive.src = "./assets/img-team/portraitTwo.png";
 })
 
-}
-
-portraitMoove()
 
 /***Contact***/
 
@@ -57,26 +23,37 @@ const message =
   });
 
 
-const periode = document.getElementById('periode').value;
+  /***/
+  let periode = document.querySelector('#periode');
 
-  function Tarif() {
-    switch (periode) {
-        case "Janvier à Mars":
-            return "200€";
-        case "Avril à Juin":
-            return "600€";
-        case "Juillet à Septembre":
-            return "800€"
-        case "Octobre à Décembre":
-            return "500€"
-        default :
-            return "Invalid";
-    }
-}
-console.log(Tarif());
+  periode.addEventListener('change', (event)=>{
+    event.target.value 
 
-/***Feedback***/
 
+      /*switch version*/
+
+      
+    switch (periode.value){
+    case 'periode1':
+      console.log('3000 €');
+    break
+      case 'periode2':
+        console.log('6000 €');
+      break;
+        case 'periode3':
+          console.log('9000 €');
+        break
+          case 'periode4':
+            console.log('10.000 €');
+          break
+    default: console.log('Please select period');
+      break;
+  }
+  })
+
+
+
+/***Home Feedbacks */
 function button() {
 
     let div = document.querySelectorAll('.hidden-global-feedbacks');
@@ -90,4 +67,5 @@ function button() {
         }
     }
 }
+
 

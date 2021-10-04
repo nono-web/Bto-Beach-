@@ -10,6 +10,7 @@ body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
+
 }
 
 /*-------- Navigation --------*/
@@ -55,10 +56,12 @@ nav {
 
 @media screen and (min-width: 600px) {
   .nav-menu>.nav-item {
-    display: inline-block;
-    font-size: 1.6rem;
-    margin-right: 1.5rem;
-  }
+
+     display: inline-block;
+     font-size: 1.6rem;
+     margin-right: 1.5rem;
+  } 
+
 
   .entry-title {
     margin: 4rem auto 4rem 6rem;
@@ -90,7 +93,9 @@ p {
 #slide figure {
   margin: 0;
   /*check*/
-  position: relative;
+
+  position: relative; 
+
   width: 500%;
   animation: 25s slidy infinite;
 }
@@ -192,9 +197,9 @@ p {
   .title-recommend {
     margin: 4rem auto 4rem 6rem;
     font-size: 1.7rem;
-  }
 
-  .bulle {
+  .bulle { 
+
     margin-top: 2rem;
     margin-left: 6rem;
     width: 11%;
@@ -258,6 +263,68 @@ p {
   }
 
 }
+
+/*------------Arrow-up----------*/
+
+.arrow-up {
+  color: #b98800;
+  opacity: 0.35;
+  height: 2rem;
+  /**3rem pour arrow**/
+  width: 2rem;
+  /**3rem pour arrow**/
+  position: fixed;
+  bottom: 1vh;
+  right: 1vw;
+  animation: 2s infinite linear alternate bump;
+
+}
+
+.arrow-up:hover {
+  opacity: 5;
+}
+
+@media screen and (min-width: 600px) {
+  .arrow-up {
+    color: #b98800;
+    opacity: 0.35;
+    height: 3rem;
+    /**3rem pour arrow**/
+    width: 3rem;
+    /**3rem pour arrow**/
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    animation: 2s infinite linear alternate bump;
+  }
+}
+
+@keyframes bump {
+
+  0% {
+    bottom: 0;
+  }
+
+  25% {
+    bottom: 0.1px;
+  }
+
+  50% {
+    bottom: 0.2px;
+  }
+
+  75% {
+    bottom: 0.1px;
+  }
+
+  100% {
+    bottom: 0.
+  }
+}
+
+
+
+
 
 /*-------- about-us page--------*/
 
@@ -373,10 +440,11 @@ input[type="submit"]:hover {
   }
 }
 
+
 /*-------- Page Tour --------*/
 .concepttour {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   margin: 2%;
 }
 
@@ -408,6 +476,7 @@ input[type="submit"]:hover {
 }
 
 .img2t {
+
   margin: 5%;
   max-width: 90%;
   border-radius: 10%
@@ -424,6 +493,7 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
+
   .imgVilleTour {
     width: 10%;
     height: 10%;
@@ -455,6 +525,7 @@ input[type="submit"]:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+
   }
 }
 
@@ -466,7 +537,6 @@ input[type="submit"]:hover {
 .textDetailTour {
   margin-right: 2rem;
   font: justify;
-
 }
 
 @media screen and (min-width: 600px) {
@@ -474,7 +544,6 @@ input[type="submit"]:hover {
   .VilleTour2 {
     display: flex;
     flex-direction: row;
-
   }
 
   .img2t {
