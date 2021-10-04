@@ -3,7 +3,8 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
- }
+}
+
 
 body {
   font-size: 1.6rem;
@@ -17,11 +18,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#071d4c;
+  background-color: #071d4c;
   font-size: 0.8rem;
   border-bottom: solid 0.3rem;
   border-color: #b98800;
- }
+}
 
 .logo-btob {
   width: 5rem;
@@ -29,15 +30,15 @@ nav {
 }
 
 .nav-menu {
- list-style: none;
- margin-right: 0.5rem;
+  list-style: none;
+  margin-right: 0.5rem;
 }
 
 .nav-item a {
- display: inline-block;
- padding: 0.2rem;
- text-decoration: none;
- color: #b98800;
+  display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: #b98800;
 }
 
 .nav-item a:hover {
@@ -54,59 +55,91 @@ nav {
 
 @media screen and (min-width: 600px) {
   .nav-menu>.nav-item {
-     display: inline-block;
-     font-size: 1.6rem;
-     margin-right: 1.5rem;
-  } 
-  .entry-title{  
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+  }
+
+  .entry-title {
     margin: 4rem auto 4rem 6rem;
     font-size: 2rem;
   }
+
   .logo-btob {
     width: 8rem;
     margin-left: 1rem;
   }
 }
 
-p{
+p {
   color: rgb(53, 77, 121);
   font-family: sans-serif;
 }
 
 /*-------- Slide  --------*/
 
-#slide { 
-  width: 90%; 
-  max-width: 900px; 
-  overflow: hidden; 
-  margin: auto; 
+#slide {
+  width: 90%;
+  max-width: 900px;
+  overflow: hidden;
+  margin: auto;
   border: 2px solid;
   border-radius: 1rem;
 }
 
 #slide figure {
-  margin: 0;  /*check*/
-  position: relative; 
+  margin: 0;
+  /*check*/
+  position: relative;
   width: 500%;
   animation: 25s slidy infinite;
 }
 
-#slide figure .img-slide { 
-  width: 20%; 
-  float: left; 
+#slide figure .img-slide {
+  width: 20%;
+  float: left;
 }
 
 @keyframes slidy {
-  0% { right: 0%; }
-  10% { right: 0%; }
-  20% { right: 100%; }
-  30% { right: 100%; }
-  40% { right: 200%; }
-  50% { right: 200%; }
-  70% { right: 300%; }
-  80% { right: 300%; }
-  90% { right: 400%; }
-  100% { right: 400%; }
+  0% {
+    right: 0%;
+  }
+
+  10% {
+    right: 0%;
+  }
+
+  20% {
+    right: 100%;
+  }
+
+  30% {
+    right: 100%;
+  }
+
+  40% {
+    right: 200%;
+  }
+
+  50% {
+    right: 200%;
+  }
+
+  70% {
+    right: 300%;
+  }
+
+  80% {
+    right: 300%;
+  }
+
+  90% {
+    right: 400%;
+  }
+
+  100% {
+    right: 400%;
+  }
 }
 
 /*-------- Section bulle et avis --------*/
@@ -131,9 +164,9 @@ p{
   width: 95%;
 }
 
-.hidden-global-feedbacks { 
+.hidden-global-feedbacks {
   display: none;
-  align-items: center; 
+  align-items: center;
   width: 95%;
 }
 
@@ -146,7 +179,8 @@ p{
 .global-feedbacks p {
   margin-left: 0.5rem;
   font-size: 0.7rem;
-  padding-top: 0.5rem;;
+  padding-top: 0.5rem;
+  ;
 }
 
 .button-feedback {
@@ -158,31 +192,37 @@ p{
   .title-recommend {
     margin: 4rem auto 4rem 6rem;
     font-size: 1.7rem;
-  }  
-  .bulle { 
+  }
+
+  .bulle {
     margin-top: 2rem;
     margin-left: 6rem;
     width: 11%;
+    border-radius: 1rem;
+
   }
+
   .global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
-  .hidden-global-feedbacks p{
+
+  .hidden-global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
+
   .button-feedback {
-    margin: 2rem auto auto 50%; 
-    font-size: 1rem;   
+    margin: 2rem auto auto 50%;
+    font-size: 1rem;
   }
 }
 
 /*-------- footer --------*/
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -208,11 +248,13 @@ p{
     margin-top: 5rem;
     padding: 0.90rem;
   }
+
   .logo-btob1 {
     width: 7rem;
   }
+
   .footer-container p {
-    font-size: 1.7rem;  
+    font-size: 1.7rem;
   }
 
 }
@@ -228,10 +270,11 @@ p{
 
 .column-img {
   display: flex;
-  justify-content: space-around; /*space around pour mobile*/  
+  justify-content: space-around;
+  /*space around pour mobile*/
 }
 
-.column-img-solo{
+.column-img-solo {
 
   display: flex;
   justify-content: center;
@@ -243,11 +286,11 @@ p{
 
 @media screen and (min-width: 600px) {
   .img-team {
-    width: 10rem; 
+    width: 10rem;
   }
 }
 
-.team-history{
+.team-history {
   margin-top: 1.6rem;
 }
 
@@ -262,19 +305,20 @@ p{
 
 @media screen and (min-width: 600px) {
   .team-history {
-  padding: 4.5rem 8em 8rem 6.5rem; 
+    padding: 4.5rem 8em 8rem 6.5rem;
   }
 }
+
 @media screen and (min-width: 2000px) {
   .team-history {
-  padding: 4.5rem 8em 9rem 6.5rem; 
+    padding: 4.5rem 8em 9rem 6.5rem;
   }
 }
 
 /*-------- page contact --------*/
 .h2-contact {
-color: #b98800;
-margin: 1.5rem;
+  color: #b98800;
+  margin: 1.5rem;
 }
 
 .contact {
@@ -293,39 +337,44 @@ textarea {
   padding: 10px;
   margin-bottom: 20px;
 }
+
 input[type="button"] {
-  background:#b98800 ;
+  background: #b98800;
   color: white;
   border: 3px solid black;
   border-radius: 1rem;
   padding: 5px 10px;
 }
+
 input[type="button"]:hover {
   background-color: rgba(178, 32, 19, 0.8);
   transition: 1s;
 }
+
 /* Effet de style sur le bouton */
 input[type="submit"] {
-  background:#b98800 ;
+  background: #b98800;
   color: white;
   border: 3px solid black;
   border-radius: 1rem;
   padding: 5px 10px;
 }
+
 /* Effet pour quand que l'utlisateur met la souris sur le bouton
 le bouton change de couleur et dans ce cas il devient rouge */
 input[type="submit"]:hover {
   background-color: rgba(178, 32, 19, 0.8);
   transition: 1s;
 }
+
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 0,5rem;
+    font-size: 0, 5rem;
   }
 }
 
 /*-------- Page Tour --------*/
-.concepttour{
+.concepttour {
   text-align: center;
   font-size: 4vw;
   margin: 2%;
@@ -340,139 +389,156 @@ input[type="submit"]:hover {
 }
 
 
-#imgid1tour{
+#imgid1tour {
   text-align: center;
   margin: 1.2rem 1.2rem;
 }
-.img1tour{
+
+.img1tour {
   align-items: center;
   max-width: 100%;
   border-radius: 5%;
+  border:solid 2px black;
 }
 
-#imgx5toptour{
+#imgx5toptour {
   margin: 5%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.img2t{
- margin: 5%;
- max-width: 90%;
- border-radius: 10%
+.img2t {
+  margin: 5%;
+  max-width: 90%;
+  border-radius: 10%
 }
 
 
-.h2Tour{
+.h2Tour {
   margin-left: 2rem;
 }
 
-.kilometrage{
+.kilometrage {
   margin-left: 2rem;
   margin-top: 5rem;
 }
 
-@media screen and (max-width: 600px){
-.imgVilleTour {
-  width: 10%;
-  height: 10%;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right : 2rem;
-}
+@media screen and (max-width: 600px) {
+  .imgVilleTour {
+    width: 10%;
+    height: 10%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
 
-.imgVilleTour2 {
-  width: 10%;
-  height: 10%;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right : 2rem;
-}
+  .imgVilleTour2 {
+    width: 10%;
+    height: 10%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
 
 
-.DetailTour{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-width: 100%;
-}
+  .DetailTour {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
 
-.DetailTour2{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
+  .DetailTour2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
   }
 }
 
-.textTour{
+.textTour {
   margin-right: 2rem;
-  font : justify;
+  font: justify;
 }
 
-.textDetailTour{
+.textDetailTour {
   margin-right: 2rem;
-  font : justify;
-  
+  font: justify;
+
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
 
-.VilleTour2{
+  .VilleTour2 {
     display: flex;
     flex-direction: row;
-    
+
+  }
+
+  .img2t {
+    box-shadow: 12px 29px 81px 0px rgba(3, 3, 3, 0.75);
+    /*Ombre mis en place sur les img*/
+  }
+
+  .img2t:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 12px 29px 81px 50px white;
+    /*Ombre mis en place sur les img*/
+  }
+
+  .imgVilleTour {
+    width: 20%;
+    height: 20%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    border: solid black 2px;
+  }
+
+  .imgVilleTour2 {
+    width: 50%;
+    height: 50%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
+
+  .DetailTour {
+    display: flex;
+    align-items: center;
+
+  }
+
+  scroll-container {
+    overflow-y: scroll;
+    /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+    scroll-behavior: smooth;
+    /*permet de scroll en douceur  */
+  }
+}
+
+scroll-container {
+  overflow-y: scroll;
+  /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
+  scroll-behavior: smooth;
+  /*permet de scroll en douceur  */
 }
 
 .img2t {
-  box-shadow: 12px 29px 81px 0px rgba(3, 3, 3, 0.75); /*Ombre mis en place sur les img*/
- }
- 
- .img2t:hover {
-   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-   box-shadow: 12px 29px 81px 50px white; /*Ombre mis en place sur les img*/
- }
-
-.imgVilleTour {
-  width: 20%;
-  height: 20%;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right : 2rem;
-}
-
-.imgVilleTour2 {
-  width: 50%;
-  height: 50%;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right : 2rem;
-}
-
-.DetailTour{
-  display: flex;
-  align-items: center;
-  
-}
-scroll-container {
-  overflow-y: scroll; /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
-  scroll-behavior: smooth; /*permet de scroll en douceur  */
-}
-}
-
-scroll-container {
-  overflow-y: scroll; /* permet de définir les mécanismes à utiliser (rognage, ascenseurs, dépassement, etc.) lorsque le contenu dépasse des bords haut et bas de la boîte. test*/
-  scroll-behavior: smooth; /*permet de scroll en douceur  */
-}
-.img2t {
- transition: transform .3s; /* Animation */
+  transition: transform .3s;
+  /* Animation */
 }
 
 .img2t:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.5);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.VilleTour{
+.VilleTour {
   margin: 1.2rem 1.2rem;
 }
-
