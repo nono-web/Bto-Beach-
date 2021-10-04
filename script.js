@@ -33,7 +33,7 @@ portraitFour.addEventListener('mouseenter', () => {
   portraitFour.src = "./assets/citys/Saint-Aubin.png";
 })
 portraitFour.addEventListener('mouseleave',() =>{
-portraitFour.src = "../assets/img-team/PortraitSix.png";
+portraitFour.src = "./assets/img-team/PortraitSix.png";
 })
 portraitFive.addEventListener('mouseenter', () => {
   portraitFive.src = "./assets/citys/Saint-Aubin.png";
@@ -75,7 +75,7 @@ const periode = document.getElementById('periode').value;
 }
 console.log(Tarif());
 
-
+/***Feedback***/
 
 function button() {
 
