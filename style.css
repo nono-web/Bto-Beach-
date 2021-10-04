@@ -3,7 +3,6 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
 }
 
 
@@ -88,8 +87,6 @@ p {
   border-radius: 1rem;
 }
 
-
-
 #slide figure {
   margin: 0;
   /*check*/
@@ -158,6 +155,7 @@ p {
   height: 13%;
   margin: 0.8rem;
   border: solid 2px black;
+  border-radius: 1rem;
 }
 
 .global-feedbacks {
@@ -187,12 +185,7 @@ p {
 
 .button-feedback {
   margin: 1rem auto auto 44%;
-  font-size: 0.7rem;
-  background: white;
-  color: #b98800;
-  border: 2px solid #b98800;
-  border-radius: 1rem;
-  padding: 3px 4px;
+  font-size: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -204,18 +197,21 @@ p {
   .bulle {
     margin-top: 2rem;
     margin-left: 6rem;
-    width: 13%;
+    width: 11%;
     border-radius: 1rem;
+
   }
 
   .global-feedbacks p {
     padding: 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 6%;
   }
 
   .hidden-global-feedbacks p {
     padding: 0.8rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 6%;
   }
 
   .button-feedback {
