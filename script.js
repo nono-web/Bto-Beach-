@@ -8,6 +8,7 @@ arrow.addEventListener('click', ()=>{
     top:0,
     behavior: 'smooth'  
   });
+
 })
 
 
@@ -27,6 +28,7 @@ const message =
 
   periode.addEventListener('change', (event)=>{
     event.target.value 
+
 
       /*switch version*/
 
@@ -48,6 +50,7 @@ const message =
       break;
   }
   })
+
 
 
 /***Home Feedbacks */
