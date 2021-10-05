@@ -31,7 +31,7 @@
         type="text"
         id="name"
         name="name"
-        placeholder="Pierre Dupont"
+        placeholder="Nom Prenom"
       />
       <br/>
       <!-- case pour ercire non et prenom-->
@@ -40,7 +40,7 @@
         type="email"
         id="email"
         name="email"
-        placeholder="exemplemail@royale.com"
+        placeholder="exemplel@gmail.com"
       /><br />
       
 
@@ -55,11 +55,6 @@
        <option  class ="periode4" value="periode4">Octobre à Décembre</option>
       </select>
       <br/>
-
-      <input id="summit1"
-      type="button"
-      value="tarif">
-
 
       <div>
         <label for="gender">Demande : </label>
@@ -76,8 +71,13 @@
 
 
       <label for="message"> Message</label><br />
-      <textarea id="message" name="message"></textarea>
-      <br /><br />
+      <textarea id="message" cols="20" rows="10"  name="message"></textarea>
+      <br />
+      
+      <label class="coche" >
+        <input type="checkbox"  />En cochant cette case, j'accepte de recevoir des informations sur les différentes offres disponibles.</label> 
+        <br />
+      
       <input id="buttonContact"
         type="submit"
         value="Envoyer"
@@ -98,6 +98,7 @@
     <p>Copyright.</p>
   </footer>
   <script src="script.js"></script>
+  <script src="scriptContact.js"></script>
 
 </body>
 
