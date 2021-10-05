@@ -296,7 +296,7 @@ p {
     position: fixed;
     bottom: 1vh;
     right: 1vw;
-    animation: 2s infinite linear alternate bump;
+    animation: 2s linear alternate bump;
   }
 }
 
@@ -496,17 +496,18 @@ input[type="submit"]:hover {
 @media screen and (max-width: 600px) {
 
   .imgVilleTour {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 20%;
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 1rem;
+    border: solid 1px black;
   }
 
   .imgVilleTour2 {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 20%;
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -527,6 +528,15 @@ input[type="submit"]:hover {
     align-items: center;
     width: 100%;
 
+  }
+  
+  .img2t {
+    border: solid 1px black;
+  }
+
+  .img2t:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 }
 
