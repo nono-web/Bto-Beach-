@@ -22,9 +22,8 @@
   </nav>
   <section class="contact">
     <!--Section Contact-->
-    <h2 class="h2-contact">
-      Merci de remplir le formulaire ci-dessous selon votre demande
-    </h2>
+    <h2 class="h2-contact">Nous contacter</h2>
+    <h4 class="h2-contact">Notre équipe se fera un plaisir de planifier votre nouveau voyage!</h4>
 
     <form class="contactform">
       <label for="name"> Nom et Prenom : </label><br />
@@ -32,7 +31,7 @@
         type="text"
         id="name"
         name="name"
-        placeholder="Pierre Dupont"
+        placeholder="Nom Prenom"
       />
       <br/>
       <!-- case pour ercire non et prenom-->
@@ -41,25 +40,18 @@
         type="email"
         id="email"
         name="email"
-        placeholder="exemplemail@royale.com"
+        placeholder="exemple@gmail.com"
       /><br />
       
-
-    
-      <label for="periode">Periode : </label>
-      <select class="periode" id="periode">
+       <label>Periode : </label>
+      <select  id="periode" name="periode">
       <option selected>Selectionner votre Periode</option>
-      <option  value="Periode1">Janvier à Mars</option>
-       <option  value="Periode2">Avril à Juin</option>
-       <option value="Periode3">Juillet à Septembre</option>
-       <option  value="Periode4">Octobre à Décembre</option>
+      <option class="periode1"  value="periode1">Janvier à Mars</option>
+       <option class="periode2" value="periode2">Avril à Juin</option>
+       <option class ="periode3"value="periode3">Juillet à Septembre</option>
+       <option  class ="periode4" value="periode4">Octobre à Décembre</option>
       </select>
       <br/>
-
-      <input class="buttonTarif"
-      type="button"
-      value="Tarif">
-
 
       <div>
         <label for="gender">Demande : </label>
@@ -76,17 +68,23 @@
 
 
       <label for="message"> Message</label><br />
-      <textarea id="message" name="message"></textarea>
-      <br /><br />
+      <textarea id="message" name="message" cols="20" rows="10" placeholder="Votre question ou vos commentaires"></textarea>
+      <br />
+
+      <label class="coche" >
+        <input type="checkbox"  />En cochant cette case, j'accepte de recevoir des informations sur les différentes offres disponibles.</label> 
+        <br />
+    
       <input id="buttonContact"
         type="submit"
         value="Envoyer"
       /><!--Bouton soumettre le formulaire-->
     </form>
   </section>
+  
   <!--Referme "contact"-->
   <!-- Connection au fichier java -->
-  <script src="script.js"></script>
+  <script src="scriptContact.js"></script>
 
 
 

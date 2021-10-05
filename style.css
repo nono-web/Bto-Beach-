@@ -276,6 +276,20 @@ p{
 }
 
 /*-------- page contact --------*/
+
+.contact {
+    border: 1rem solid white;
+    border-radius: 3rem;
+    margin: 6rem;
+    background: url("/assets/trevor.jpg");
+    background-size: cover;
+    
+}
+
+.contactform {
+  color: white;
+  font-weight: bold;
+}
 .h2-contact {
 color: #b98800;
 margin: 1.5rem;
@@ -291,31 +305,39 @@ label {
 
 /* Effet de style sur le texte qui sera ecrit dans les cases */
 input[type="text"],
-input[type="email"],
-textarea {
+input[type="email"] {
   width: 40%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
 }
-input[type="button"] {
-  background:#b98800 ;
-  color: white;
-  border: 3px solid black;
-  border-radius: 1rem;
-  padding: 5px 10px;
+#periode {
+  border-radius: 2rem;
 }
-input[type="button"]:hover {
-  background-color: rgba(178, 32, 19, 0.8);
-  transition: 1s;
+
+
+textarea {
+  resize: none;
+  width: 40%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: none;
+
 }
+
+
 /* Effet de style sur le bouton */
 input[type="submit"] {
   background:#b98800 ;
+  border: none;
   color: white;
-  border: 3px solid black;
-  border-radius: 1rem;
-  padding: 5px 10px;
+  border-radius: 2rem;
+  padding: 20px 20px;
+  margin-bottom: 2rem;
 }
+
 /* Effet pour quand que l'utlisateur met la souris sur le bouton
 le bouton change de couleur et dans ce cas il devient rouge */
 input[type="submit"]:hover {
@@ -324,10 +346,21 @@ input[type="submit"]:hover {
 }
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 0,5rem;
-  }
+    font-size: 1,2rem;
+    }
+    .contact {
+      margin: 0;
+    }
+    .check2 {
+      font-size: 1rem;
+    }
+    .coche {
+      font-size: 1rem;
+    }
 }
 
+
+/* ------- Le Tour -------*/
 
 
 .concepttour{
