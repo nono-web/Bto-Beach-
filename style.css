@@ -5,12 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
-
 }
 
 /*-------- Navigation --------*/
@@ -56,18 +54,14 @@ nav {
 
 @media screen and (min-width: 600px) {
   .nav-menu>.nav-item {
-
-     display: inline-block;
-     font-size: 1.6rem;
-     margin-right: 1.5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
   } 
-
-
   .entry-title {
     margin: 4rem auto 4rem 6rem;
     font-size: 2rem;
   }
-
   .logo-btob {
     width: 8rem;
     margin-left: 1rem;
@@ -92,10 +86,7 @@ p {
 
 #slide figure {
   margin: 0;
-  /*check*/
-
   position: relative; 
-
   width: 500%;
   animation: 25s slidy infinite;
 }
@@ -149,6 +140,10 @@ p {
 
 /*-------- Section bulle et avis --------*/
 
+span {
+  color: #b98800;
+}
+
 .title-recommend {
   font-size: 0.8rem;
   margin: 2rem auto 2rem 2rem;
@@ -191,6 +186,15 @@ p {
 .button-feedback {
   margin: 1rem auto auto 44%;
   font-size: 0.5rem;
+  background: #b98800;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
 }
 
 @media screen and (min-width: 600px) {
@@ -198,28 +202,22 @@ p {
     margin: 4rem auto 4rem 6rem;
     font-size: 1.7rem;
   }
-  
   .bulle { 
-
     margin-top: 2rem;
     margin-left: 6rem;
     width: 11%;
     border-radius: 1rem;
-
   }
-
   .global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
-
   .hidden-global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
-
   .button-feedback {
     margin: 2rem auto auto 50%;
     font-size: 1rem;
@@ -258,14 +256,13 @@ p {
     margin-top: 5rem;
     padding: 0.90rem;
   }
-
   .logo-btob1 {
     width: 7rem;
   }
-
   .footer-container p {
     font-size: 1.7rem;
   }
+
   
   .hidden-text {
     display: block;
@@ -285,6 +282,7 @@ p {
     width: 2.5rem; 
   
   }
+
 }
 
 
@@ -316,7 +314,7 @@ p {
     position: fixed;
     bottom: 1vh;
     right: 1vw;
-    animation: 2s infinite linear alternate bump;
+    animation: 2s linear alternate bump;
   }
 
   .arrow-up:hover {
@@ -415,14 +413,16 @@ p {
     border: 1rem solid white;
     border-radius: 3rem;
     margin: 6rem;
-    background: url("/assets/contact/trevor.jpg");
+    background: url("./assets/contact/trevor.jpg");
     background-size: cover;
     text-align: center;
 }
+
 .contactform {
   color: white;
   font-weight: bold;
 }
+
 .h2-contact {
 color: #b98800;
 margin: 1.5rem;
@@ -432,7 +432,6 @@ label {
   line-height: 2;
 }
 
-/* Effet de style sur le texte qui sera ecrit dans les cases */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -442,9 +441,11 @@ textarea {
   border-radius: 2rem;
   border: none;
 }
+
 #periode {
   border-radius: 2rem;
 }
+
 textarea {
   resize: none;
   width: 40%;
@@ -454,7 +455,6 @@ textarea {
   border: none;
 }
 
-/* Effet de style sur le bouton */
 input[type="submit"] {
   background: #b98800;
   color: white;
@@ -464,8 +464,6 @@ input[type="submit"] {
   margin-bottom: 2rem;
 }
 
-/* Effet pour quand que l'utlisateur met la souris sur le bouton
-le bouton change de couleur et dans ce cas il devient rouge */
 input[type="submit"]:hover {
   background-color: rgba(178, 32, 19, 0.8);
   transition: 1s;
@@ -485,7 +483,6 @@ input[type="submit"]:hover {
       font-size: 1rem;
     }
 }
-
 
 /*-------- Page Tour --------*/
 .concepttour {
@@ -538,20 +535,41 @@ input[type="submit"]:hover {
   margin-top: 5rem;
 }
 
+.van{
+  height: 4rem;
+  width: 4rem;
+  color: rgb(3, 3, 87);
+  position: relative;
+  animation: 4s ease-out infinite roll;
+}
+
+@keyframes roll {
+  0%{
+      left: 0rem
+  }
+
+  100% {
+    left: 70rem;
+    animation-play-state: paused;
+  }
+  
+}
+
 @media screen and (max-width: 600px) {
 
   .imgVilleTour {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 20%;
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     border-radius: 1rem;
+    border: solid 1px black;
   }
 
   .imgVilleTour2 {
-    width: 10%;
-    height: 10%;
+    width: 25%;
+    height: 20%;
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -572,6 +590,15 @@ input[type="submit"]:hover {
     align-items: center;
     width: 100%;
 
+  }
+  
+  .img2t {
+    border: solid 1px black;
+  }
+
+  .img2t:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 }
 
