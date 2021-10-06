@@ -537,7 +537,7 @@ input[type="submit"]:hover {
   margin-left: 2rem;
   margin-top: 5rem;
 }
-/*
+
 .van{
   height: 4rem;
   width: 4rem;
@@ -545,7 +545,7 @@ input[type="submit"]:hover {
   position: relative;
   animation: 4s ease-out infinite roll;
 }
-*/
+
 @keyframes roll {
   0%{
       left: 0rem
