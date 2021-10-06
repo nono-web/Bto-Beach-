@@ -6,10 +6,11 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   padding: 0;
   margin: 0;
 }
+
+
 
 /*-------- Navigation --------*/
 
@@ -251,7 +252,7 @@ input[type="button"]:hover {
   color: #b98800;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   footer {
     margin-top: 5rem;
     padding: 0.90rem;
@@ -487,9 +488,11 @@ input[type="submit"]:hover {
 /*-------- Page Tour --------*/
 .concepttour {
   text-align: center;
-  font-size: 3vw;
+  font-size: 0.8rem;
   margin: 2%;
 }
+
+
 
 .reservtour {
   border-radius: 60rem;
@@ -534,7 +537,7 @@ input[type="submit"]:hover {
   margin-left: 2rem;
   margin-top: 5rem;
 }
-
+/*
 .van{
   height: 4rem;
   width: 4rem;
@@ -542,7 +545,7 @@ input[type="submit"]:hover {
   position: relative;
   animation: 4s ease-out infinite roll;
 }
-
+*/
 @keyframes roll {
   0%{
       left: 0rem
@@ -602,15 +605,19 @@ input[type="submit"]:hover {
   }
 }
 
-.textTour {
+.textDetailTour {
+  font-size: 0.7rem;
   margin-right: 2rem;
   font: justify;
 }
 
-.textDetailTour {
-  margin-right: 2rem;
-  font: justify;
+@media screen and (min-width: 600px) {
+  .textDetailTour {
+  font-size: 1.2rem;
+  
+  }
 }
+
 
 @media screen and (min-width: 600px) {
 
