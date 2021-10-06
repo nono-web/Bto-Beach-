@@ -393,10 +393,12 @@ p {
     background-size: cover;
     text-align: center;
 }
+
 .contactform {
   color: white;
   font-weight: bold;
 }
+
 .h2-contact {
 color: #b98800;
 margin: 1.5rem;
@@ -406,7 +408,6 @@ label {
   line-height: 2;
 }
 
-/* Effet de style sur le texte qui sera ecrit dans les cases */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -416,9 +417,11 @@ textarea {
   border-radius: 2rem;
   border: none;
 }
+
 #periode {
   border-radius: 2rem;
 }
+
 textarea {
   resize: none;
   width: 40%;
@@ -428,7 +431,6 @@ textarea {
   border: none;
 }
 
-/* Effet de style sur le bouton */
 input[type="submit"] {
   background: #b98800;
   color: white;
@@ -438,8 +440,6 @@ input[type="submit"] {
   margin-bottom: 2rem;
 }
 
-/* Effet pour quand que l'utlisateur met la souris sur le bouton
-le bouton change de couleur et dans ce cas il devient rouge */
 input[type="submit"]:hover {
   background-color: rgba(178, 32, 19, 0.8);
   transition: 1s;
@@ -459,7 +459,6 @@ input[type="submit"]:hover {
       font-size: 1rem;
     }
 }
-
 
 /*-------- Page Tour --------*/
 .concepttour {
