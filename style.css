@@ -512,6 +512,26 @@ input[type="submit"]:hover {
   margin-top: 5rem;
 }
 
+.van{
+  height: 4rem;
+  width: 4rem;
+  color: rgb(3, 3, 87);
+  position: relative;
+  animation: 4s ease-out infinite roll;
+}
+
+@keyframes roll {
+  0%{
+      left: 0rem
+  }
+
+  100% {
+    left: 70rem;
+    animation-play-state: paused;
+  }
+  
+}
+
 @media screen and (max-width: 600px) {
 
   .imgVilleTour {
