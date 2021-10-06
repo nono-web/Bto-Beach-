@@ -389,7 +389,7 @@ p {
     border: 1rem solid white;
     border-radius: 3rem;
     margin: 6rem;
-    background: url("/assets/contact/trevor.jpg");
+    background: url("./assets/contact/trevor.jpg");
     background-size: cover;
     text-align: center;
 }
