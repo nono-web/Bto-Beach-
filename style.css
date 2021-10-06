@@ -5,12 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-size: 1.6rem;
   padding: 0;
   margin: 0;
-
 }
 
 /*-------- Navigation --------*/
@@ -56,18 +54,14 @@ nav {
 
 @media screen and (min-width: 600px) {
   .nav-menu>.nav-item {
-
-     display: inline-block;
-     font-size: 1.6rem;
-     margin-right: 1.5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
   } 
-
-
   .entry-title {
     margin: 4rem auto 4rem 6rem;
     font-size: 2rem;
   }
-
   .logo-btob {
     width: 8rem;
     margin-left: 1rem;
@@ -92,10 +86,7 @@ p {
 
 #slide figure {
   margin: 0;
-  /*check*/
-
   position: relative; 
-
   width: 500%;
   animation: 25s slidy infinite;
 }
@@ -149,6 +140,10 @@ p {
 
 /*-------- Section bulle et avis --------*/
 
+span {
+  color: #b98800;
+}
+
 .title-recommend {
   font-size: 0.8rem;
   margin: 2rem auto 2rem 2rem;
@@ -191,6 +186,15 @@ p {
 .button-feedback {
   margin: 1rem auto auto 44%;
   font-size: 0.5rem;
+  background: #b98800;
+  color: white;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(178, 32, 19, 0.8);
+  transition: 1s;
 }
 
 @media screen and (min-width: 600px) {
@@ -198,28 +202,22 @@ p {
     margin: 4rem auto 4rem 6rem;
     font-size: 1.7rem;
   }
-  
   .bulle { 
-
     margin-top: 2rem;
     margin-left: 6rem;
     width: 11%;
     border-radius: 1rem;
-
   }
-
   .global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
-
   .hidden-global-feedbacks p {
     padding: 0.8rem;
     font-size: 1.2rem;
     margin-bottom: 6%;
   }
-
   .button-feedback {
     margin: 2rem auto auto 50%;
     font-size: 1rem;
@@ -254,15 +252,12 @@ p {
     margin-top: 5rem;
     padding: 0.90rem;
   }
-
   .logo-btob1 {
     width: 7rem;
   }
-
   .footer-container p {
     font-size: 1.7rem;
   }
-
 }
 
 /*------------Arrow-up----------*/
