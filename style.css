@@ -539,11 +539,11 @@ input[type="submit"]:hover {
 }
 
 .van{
-  height: 4rem;
-  width: 4rem;
+  height: 7%;
+  width: 7%;
   color: rgb(3, 3, 87);
   position: relative;
-  animation: 4s ease-out infinite roll;
+  animation: 4s ease-out roll forwards;
 }
 
 @keyframes roll {
@@ -552,8 +552,8 @@ input[type="submit"]:hover {
   }
 
   100% {
-    left: 70rem;
-    animation-play-state: paused;
+    left: 85%;
+   
   }
   
 }
