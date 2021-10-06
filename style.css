@@ -6,10 +6,13 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   padding: 0;
   margin: 0;
 }
+
+
+
+
 
 /*-------- Navigation --------*/
 
@@ -242,14 +245,18 @@ input[type="button"]:hover {
   width: 3rem;
 }
 
+.hidden-text {
+  display: none;
+}
+
 .footer-container p {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   color: #b98800;
 }
 
-@media screen and (min-width: 600px) {
-  footer {
-    margin-top: 5rem;
+@media screen and (min-width: 900px) {
+  .footer-container {
+    margin-top: 12rem;
     padding: 0.90rem;
   }
   .logo-btob1 {
@@ -258,41 +265,64 @@ input[type="button"]:hover {
   .footer-container p {
     font-size: 1.7rem;
   }
+
+  
+  .hidden-text {
+    display: block;
+  }
+
 }
+
+.social-icon{
+  margin-right: 1.2rem;
+  width: 1.6rem; 
+
+}
+
+@media screen and (min-width: 600px) {
+  .social-icon{
+    width: 2.5rem; 
+  
+  }
+
+}
+
+
 
 /*------------Arrow-up----------*/
 
+
+
 .arrow-up {
   color: #b98800;
-  opacity: 0.35;
-  height: 2rem;
-  /**3rem pour arrow**/
-  width: 2rem;
-  /**3rem pour arrow**/
   position: fixed;
+  opacity: 0.50;
+  height: 1.6rem;
+  width: 1.6rem;
   bottom: 1vh;
   right: 1vw;
   animation: 2s infinite linear alternate bump;
-
 }
 
-.arrow-up:hover {
-  opacity: 5;
-}
+
+
 
 @media screen and (min-width: 600px) {
   .arrow-up {
     color: #b98800;
     opacity: 0.35;
     height: 3rem;
-    /**3rem pour arrow**/
     width: 3rem;
-    /**3rem pour arrow**/
     position: fixed;
     bottom: 1vh;
     right: 1vw;
     animation: 2s linear alternate bump;
   }
+
+  .arrow-up:hover {
+    opacity: 5;
+  }
+  
 }
 
 @keyframes bump {
@@ -314,7 +344,8 @@ input[type="button"]:hover {
   }
 
   100% {
-    bottom: 0.
+    bottom: 0.;
+
   }
 }
 
@@ -429,10 +460,11 @@ textarea {
 input[type="submit"] {
   background: #b98800;
   color: white;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 2rem;
-  padding: 20px 20px;
+  padding: 15px 25px;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -440,9 +472,16 @@ input[type="submit"]:hover {
   transition: 1s;
 }
 
+@media screen and (min-width: 900px) {
+  input[type="submit"]  {
+    padding: 15px 25px;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 1,2rem;
+    font-size: 1.7rem;
     }
     .contact {
       margin: 0;
@@ -458,16 +497,19 @@ input[type="submit"]:hover {
 /*-------- Page Tour --------*/
 .concepttour {
   text-align: center;
-  font-size: 3vw;
+  font-size: 0.8rem;
   margin: 2%;
 }
 
+
+
 .reservtour {
-  border-radius: 60rem;
-  padding: 1.2rem;
-  margin: auto;
-  display: flex;
-  margin-top: 2%;
+  background: #b98800;
+  color: white;
+  border: 3px solid black;
+  border-radius: 2rem;
+  padding: 20px 20px;
+  margin-bottom: 2rem;
 }
 
 
@@ -507,11 +549,11 @@ input[type="submit"]:hover {
 }
 
 .van{
-  height: 4rem;
-  width: 4rem;
+  height: 5%;
+  width: 5%;
   color: rgb(3, 3, 87);
   position: relative;
-  animation: 4s ease-out infinite roll;
+  animation: 4s ease-out roll forwards;
 }
 
 @keyframes roll {
@@ -520,8 +562,8 @@ input[type="submit"]:hover {
   }
 
   100% {
-    left: 70rem;
-    animation-play-state: paused;
+    left: 85%;
+   
   }
   
 }
@@ -573,15 +615,19 @@ input[type="submit"]:hover {
   }
 }
 
-.textTour {
+.textDetailTour {
+  font-size: 0.7rem;
   margin-right: 2rem;
   font: justify;
 }
 
-.textDetailTour {
-  margin-right: 2rem;
-  font: justify;
+@media screen and (min-width: 600px) {
+  .textDetailTour {
+  font-size: 1.2rem;
+  
+  }
 }
+
 
 @media screen and (min-width: 600px) {
 

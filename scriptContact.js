@@ -1,6 +1,8 @@
 /***Contact***/
 const message =
-  " 👍 Merci d'avoir envoyé votre demande. Votre demande sera traité dans les meilleurs délai. 👍";
+  ` 👍 Merci de nous avoir transmis votre demande.
+    Nous vous contacterons pour votre prochaine escale 
+    dans les meilleurs délai. 👍`;
     document.querySelector("#contactform");
     document.addEventListener("submit", function (event) {
     event.preventDefault();

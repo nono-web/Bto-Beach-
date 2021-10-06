@@ -13,18 +13,26 @@ arrow.addEventListener('click', ()=>{
 
 
 /***Home Feedbacks */
+
+
 function button() {
+
+  const button = document.querySelector(".button-feedback");
 
     let div = document.querySelectorAll('.hidden-global-feedbacks');
     for (let i = 0; i < div.length; i++) {
-        div[i].style.display === 'none';
-
-        if (div[i].style.display === "none") {
-            div[i].style.display = "flex";
-        } else {
+        
+        if (div[i].style.display === "flex") {
             div[i].style.display = "none";
+        } else {
+            div[i].style.display = "flex";
+            button.style.display ='none';
+
         }
+              
     }
 }
+
+
 
 
