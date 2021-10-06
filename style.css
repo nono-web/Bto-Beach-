@@ -12,6 +12,8 @@ body {
 
 
 
+
+
 /*-------- Navigation --------*/
 
 nav {
@@ -253,8 +255,8 @@ input[type="button"]:hover {
 }
 
 @media screen and (min-width: 900px) {
-  footer {
-    margin-top: 5rem;
+  .footer-container {
+    margin-top: 12rem;
     padding: 0.90rem;
   }
   .logo-btob1 {
@@ -270,7 +272,6 @@ input[type="button"]:hover {
   }
 
 }
-
 
 .social-icon{
   margin-right: 1.2rem;
@@ -459,10 +460,11 @@ textarea {
 input[type="submit"] {
   background: #b98800;
   color: white;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 2rem;
-  padding: 20px 20px;
+  padding: 15px 25px;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -470,9 +472,16 @@ input[type="submit"]:hover {
   transition: 1s;
 }
 
+@media screen and (min-width: 900px) {
+  input[type="submit"]  {
+    padding: 15px 25px;
+  }
+}
+
+
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 1,2rem;
+    font-size: 1.7rem;
     }
     .contact {
       margin: 0;
