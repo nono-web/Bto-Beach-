@@ -355,10 +355,18 @@ input[type="button"]:hover {
 /*-------- about-us page--------*/
 
 .team-title {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #b98800;
   padding-bottom: 1.7rem;
   margin-left: 1.5rem;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .team-title {
+    margin-left: 6.5rem;
+    font-size: 1.6rem;
+  }
 }
 
 .column-img {
@@ -383,16 +391,20 @@ input[type="button"]:hover {
   }
 }
 
-.team-history {
-  margin-top: 1.6rem;
-}
-
 .philo-title {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #b98800;
 }
 
+
+@media screen and (min-width: 600px) {
+  .philo-title {
+    font-size: 1.6rem;
+  }
+}
+
 .team-history {
+  margin-top: 1.6rem;
   padding: 2rem;
 }
 
@@ -408,16 +420,41 @@ input[type="button"]:hover {
   }
 }
 
+.about-text {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 600px) {
+  .about-text {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
 /*-------- page contact --------*/
 
 .contact {
     border: 1rem solid white;
     border-radius: 3rem;
     margin: 6rem;
-    background: url("./assets/contact/trevor.jpg");
+    background: url("./assets/contact/Sans\ titre\ \(15\).png");
     background-size: cover;
     text-align: center;
+    
 }
+
+
+@media screen and (min-width: 600px) {
+  .contact {
+    font-size: 1.2rem;
+    background: url("./assets/contact/Sans\ titre\ \(1750\ x\ 850\ px\)\ \(15\).png");
+    background-size: cover;
+  }
+}
+
 
 .contactform {
   color: white;
@@ -425,7 +462,7 @@ input[type="button"]:hover {
 }
 
 .h2-contact {
-color: #b98800;
+color: #b98800  ;
 margin: 1.5rem;
 }
 
@@ -472,7 +509,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 900px) {
   .h2-contact {
-    font-size: 1,2rem;
+    font-size: 1.2rem;
     }
     .contact {
       margin: 0;
@@ -625,6 +662,7 @@ input[type="submit"]:hover {
   .VilleTour2 {
     display: flex;
     flex-direction: row;
+    text-justify: inter-word;
   }
 
   .img2t {
