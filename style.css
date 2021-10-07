@@ -562,7 +562,6 @@ input[type="submit"]:hover {
 }
 
 .img2t {
-
   margin: 5%;
   max-width: 90%;
   border-radius: 10%
@@ -574,8 +573,24 @@ input[type="submit"]:hover {
 }
 
 .kilometrage {
+  text-align: end;
+  font-size: 0.6rem;
+}
+
+.VilleTour {
+  text-align: justify;
+  text-justify: inter-word;
   margin-left: 2rem;
-  margin-top: 5rem;
+}
+
+.imgVilleTour2 {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 2rem;
+}
+
+.title-recommend{
+  font-size: 1,5rem ;
 }
 
 .van{
@@ -630,10 +645,14 @@ input[type="submit"]:hover {
 
   .DetailTour2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
 
+  .textDetailTour{
+    margin-right: 2px;
+    text-align: justify;
   }
   
   .img2t {
@@ -651,25 +670,21 @@ input[type="submit"]:hover {
   }
 }
 
-.textDetailTour {
-  font-size: 0.7rem;
-  font: justify;
-}
+
 
 @media screen and (min-width: 600px) {
+
   .textDetailTour {
-  font-size: 1.2rem;
-  
-  }
-}
-
-
-@media screen and (min-width: 600px) {
+    font-size: 1rem;
+    padding-right: 3px;
+    border: rgb(255, 255, 255) solid 10px;
+    }
 
   .VilleTour2 {
     display: flex;
     flex-direction: row;
     text-justify: inter-word;
+    flex-wrap: inherit;
   }
 
   .img2t {
@@ -711,7 +726,6 @@ input[type="submit"]:hover {
   .DetailTour {
     display: flex;
     align-items: center;
-
   }
 
   scroll-container {
