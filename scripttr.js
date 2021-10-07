@@ -1,8 +1,11 @@
-window.onscroll = function() {myFunction()};
+/*const car = document.querySelector ('#myBar');
+const body = document.querySelector ('body');
+const frame = screenTop;
 
-function myFunction() {
-  var winScroll = document.body.scrollRight || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 195; /* renvoi au max a 195% element.style width */
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
+document.addEventListener('scroll',() => {
+
+  if (scroll) {
+  car.style.height = window.scrollY 
+  }
+  
+})*/
