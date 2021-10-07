@@ -607,7 +607,7 @@ input[type="submit"]:hover {
   }
 
   100% {
-    left: 85%;
+    left: 70%;
    
   }
   
@@ -760,6 +760,15 @@ scroll-container {
   transition: transform .7s;
   transform: scale(1.5);
 
+}
+.imgVilleTour:not(:active)
+{
+   transition: 0.5s;
+   
+}
+.imgVilleTour2img:not(:active)
+{
+   transition: 0.5s;
 }
 
 .imgVilleTour:active{
