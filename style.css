@@ -5,6 +5,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 body {
   padding: 0;
   margin: 0;
@@ -642,6 +644,11 @@ input[type="submit"]:hover {
     transform: scale(1.5);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+
+  .imgVilleTour2:active{
+    transform: scale(2)
+  
+  }
 }
 
 .textDetailTour {
@@ -676,7 +683,12 @@ input[type="submit"]:hover {
     box-shadow: 12px 29px 81px 50px white;
     /*Ombre mis en place sur les img*/
   }
-
+.DetailTour2{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .imgVilleTour {
     width: 20%;
     height: 20%;
@@ -688,8 +700,8 @@ input[type="submit"]:hover {
   }
 
   .imgVilleTour2 {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -729,6 +741,18 @@ scroll-container {
 
 .VilleTour {
   margin: 1.2rem 1.2rem;
+}
+
+.imgVilleTour2:active{
+  transition: transform .7s;
+  transform: scale(1.5);
+
+}
+
+.imgVilleTour:active{
+  transition: transform .7s;
+  transform: scale(1.5);
+
 }
 
 /*Annimation -- Tutuuttttre */
