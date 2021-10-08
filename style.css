@@ -34,6 +34,8 @@ nav {
 .nav-menu {
   list-style: none;
   margin-right: 0.5rem;
+  padding-left: 0.5rem;
+
 }
 
 .nav-item a {
@@ -74,6 +76,7 @@ nav {
 p {
   color: rgb(53, 77, 121);
   font-family: sans-serif;
+  font-size: 0.7rem;
 }
 
 /*-------- Slide  --------*/
@@ -90,12 +93,12 @@ p {
 #slide figure {
   margin: 0;
   position: relative; 
-  width: 500%;
-  animation: 25s slidy infinite;
+  width: 1000%;
+  animation: 30s slidy infinite ;
 }
 
 #slide figure .img-slide {
-  width: 20%;
+  width: 10%;
   float: left;
 }
 
@@ -104,41 +107,41 @@ p {
     right: 0%;
   }
 
-  10% {
-    right: 0%;
-  }
-
-  20% {
+  11% {
     right: 100%;
   }
 
-  30% {
+  22% {
     right: 100%;
   }
 
-  40% {
+  33% {
     right: 200%;
   }
 
-  50% {
+  44% {
     right: 200%;
   }
 
-  70% {
+  55% {
+    right: 300%;
+  }
+  66% {
     right: 300%;
   }
 
-  80% {
-    right: 300%;
+  77% {
+    right: 400%;
   }
 
-  90% {
+  88% {
     right: 400%;
   }
 
   100% {
-    right: 400%;
+    right: 500%;
   }
+  
 }
 
 /*-------- Section bulle et avis --------*/
@@ -442,7 +445,7 @@ input[type="button"]:hover {
     border: 1rem solid white;
     border-radius: 3rem;
     margin: 6rem;
-    background: url("./assets/contact/Sans\ titre\ \(15\)-min.png");
+    background: url("./assets/contact/leaf_contact.png");
     background-size: cover;
     text-align: center;
     
@@ -452,7 +455,7 @@ input[type="button"]:hover {
 @media screen and (min-width: 600px) {
   .contact {
     font-size: 1.2rem;
-    background: url("./assets/contact/Sans\ titre\ \(1750\ x\ 850\ px\)\ \(15\).png");
+    background: url("./assets/contact/leaf_contact_big.png");
     background-size: cover;
   }
 }
@@ -464,7 +467,7 @@ input[type="button"]:hover {
 }
 
 .h2-contact {
-color: #b98800  ;
+color: #d8a313  ;
 margin: 1.5rem;
 }
 
@@ -601,6 +604,8 @@ input[type="submit"]:hover {
   animation: 4s ease-out infinite roll ;
 }
 
+
+
 @keyframes roll {
   0%{
       left: 0rem
@@ -612,6 +617,34 @@ input[type="submit"]:hover {
   }
   
 }
+
+
+@media screen and (max-width: 600px) {
+
+.van{
+  height: 55%;
+  width: 55%;
+  color: rgb(3, 3, 87);
+  position: relative;
+  animation: 4s ease-out infinite roll2 ;
+  
+  }
+}
+
+
+@keyframes roll2 {
+  0%{
+      left: 0rem
+  }
+
+  100% {
+    left: 45%;
+   
+  }
+  
+}
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -673,10 +706,13 @@ input[type="submit"]:hover {
 
 @media screen and (min-width: 600px) {
 
+
   .textDetailTour {
+    margin-left: 1rem;
     font-size: 1rem;
-    padding-right: 3px;
     border: rgb(255, 255, 255) solid 10px;
+    
+
     }
 
   .VilleTour2 {
@@ -685,6 +721,25 @@ input[type="submit"]:hover {
     text-justify: inter-word;
     flex-wrap: inherit;
   }
+
+#img-1{
+  margin-right: 15rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+#img-2{
+  margin-right: 20rem;
+  width: 16rem;
+  height: 10rem;
+}
+
+#img-3{
+  margin-right: 20rem;
+  width: 16rem;
+  height: 10rem;
+}
+
 
   .img2t {
     box-shadow: 12px 29px 81px 0px rgba(3, 3, 3, 0.75);
@@ -776,6 +831,8 @@ scroll-container {
   transform: scale(1.5);
 
 }
+
+
 
 /*Annimation -- Tutuuttttre */
 /*
